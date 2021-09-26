@@ -14,13 +14,18 @@
 		},
 		{
 			"data": {
-				"url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/2_symbol_map/data/earthquake.csv"
+				"url": "https://raw.githubusercontent.com/divideofficial/FIT3179-assignment-2/master/infant_mortality_coords.csv"
 			},
-			"mark": "geoshape",
+			"mark": { "type": "circle", "tooltip": { "content": "data" } },
+
 			"encoding": {
+				"longitude": { "field": "Longitude", "type": "quantitative" },
+				"latitude": { "field": "Latitude", "type": "quantitative" },
+
 				"color": {
 					"field": "2019 Mortality Rate",
-					"type": "quantitative"
+					"type": "quantitative",
+					"scale": { "scheme": "reds" }
 				}
 			}
 		}
