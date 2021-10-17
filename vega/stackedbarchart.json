@@ -1,9 +1,10 @@
 {
-	"data": { "url": "data/continent_population.csv" },
-
+	"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+	"data": { "url": "data/pollution.csv" },
 	"mark": "bar",
 	"width": "container",
 	"height": "container",
+	"background": "transparent",
 	"params": [
 		{
 			"name": "Continent",
@@ -13,21 +14,21 @@
 		}
 	],
 	"encoding": {
-		"y": {
-			"field": "Continent",
-			"type": "nominal",
-			"title": "",
-			"sort": "-x",
+		"x": {
+			"field": "Year",
+			"title": null,
 			"axis": {
-				"labelFontSize": 14,
-				"titleFontSize": 16,
 				"ticks": false,
-				"labelPadding": 40
+				"labelAngle": 0,
+				"labelPadding": 10,
+				"labelAlign": "center",
+				"labelFontSize": 16
 			}
 		},
-		"x": {
-			"field": "Population Density",
+		"y": {
+			"field": "Pollution",
 			"type": "quantitative",
+			"title": "Pollution (μg/m³)",
 			"axis": {
 				"labelFontSize": 14,
 				"titleFontSize": 16
@@ -35,6 +36,7 @@
 		},
 		"color": {
 			"field": "Continent",
+			"type": "nominal",
 			"scale": {
 				"domain": [
 					"North America",
@@ -52,7 +54,9 @@
 					"#377eb8",
 					"#a65628"
 				]
-			}
+			},
+
+			"title": "Continent"
 		},
 		"opacity": {
 			"condition": { "param": "Continent", "value": 1 },
@@ -66,9 +70,9 @@
 				"title": "Continent"
 			},
 			{
-				"field": "Population Density",
+				"field": "Pollution",
 				"type": "quantitative",
-				"title": "Population Density (population/km²)",
+				"title": "Air pollution (μg/m³)",
 				"format": ".2f"
 			}
 		]

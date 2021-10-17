@@ -44,53 +44,271 @@
 
 	<body>
 		<div class="container">
+			<span class="heading"
+				><h1>- Infant mortality around the world -</h1>
+			</span>
 
-			
-			<span class="heading"><h1>Infant mortality around the world</h1> </span>
+			<div class="row" style="margin-bottom: 50px">
+				<hr style="width: 30%; margin: auto; margin-top: -50px" ; />
+				<div
+					class="col-12"
+					style="
+						padding-left: 60px;
+						font-size: 22px;
+						text-align: center;
+						padding-right: 60px;
+						margin-bottom: 40px;
+					"
+				>
+					The world has made a lot of progress in child survival over the past
+					three decades. Despite this, an estimated
+					<b>5.2 million children</b> have under the age of five have died in
+					2019. With these statistics, <b>more than half</b> of these deaths are
+					coming in <b style="color: #e41a1c">Africa.</b> <br /><br />
+					We will explore the potential causes for increases in infant mortality
+					and what can be improved.
+				</div>
+			</div>
 
 			<div class="row">
-				<div class="col-12">
-					<h2>Infant mortality around the world</h2>
-					<p>This world map demonstrates the infant mortality rate per one thousand births. Through the use of the year slider, you are able to view the change in infant mortality rate from 1985 to 2019.</p>
-					<div class="visualisation">
-	
+				<h2>Comparing infant mortality over time</h2>
 
-						<div id="map" class="map"></div>
-						<div class="help">
-							<i class="fas fa-mouse-pointer"></i> click and drag the slider to
-							view different years
+				<div class="col-12">
+					<div
+						style="
+							padding-right: 50px;
+							padding-left: 50px;
+							margin-bottom: 120px;
+							margin-top: 50px;
+						"
+					>
+						<p class="sub-text">
+							How has the <b>infant mortality rate</b> changed over time?
+						</p>
+
+						<p>
+							<i>UNICEF</i> defines an infant death as anyone
+							<b>under the age of five.</b> Infant mortality rate is measured as
+							the number of deaths <b>per one thousand births.</b>
+						</p>
+						<div class="visualisation">
+							<div id="map" class="map"></div>
+							<div class="help">
+								<i class="fas fa-mouse-pointer"></i> <b>click</b> and
+								<b>drag</b> the slider to view different years (1985 - 2019)
+							</div>
 						</div>
 					</div>
 				</div>
-				<hr />
+
+				<h2>What could cause an increase in mortality?</h2>
 				<div class="col-12">
-					<h2>What impacts it</h2>
-					<div class="visualisation scatterplot">
-						<div id="scatterplot"></div>
-						<div class="help">
-							🖱️ Use scroll wheel to zoom into each visualisation,
-							<i class="fas fa-mouse-pointer"></i> click and drag to pan each
-							visualisation
+					<div
+						style="
+							padding-right: 30px;
+							padding-left: 30px;
+							margin-bottom: 100px;
+							margin-top: 50px;
+						"
+					>
+						<p class="sub-text">
+							What are the different <b>factors</b> that can cause an
+							<b>increase</b>
+							in infant mortality rate?
+						</p>
+
+						<div class="row">
+							<div class="col-7">
+								<div
+									class="help"
+									style="margin-left: 40px; margin-bottom: 20px"
+								>
+									🖱️ Use <b>scroll wheel</b> to zoom into each visualisation,
+									<br /><i class="fas fa-mouse-pointer"></i>
+									<b>click and drag</b>
+									to pan each graph
+								</div>
+								<div class="visualisation scatterplot">
+									<div id="scatterplot"></div>
+								</div>
+							</div>
+
+							<div class="col-5">
+								<div class="scatter-1">
+									<h3>
+										<i
+											class="fas fa-hand-holding-water"
+											style="margin-right: 20px"
+										></i
+										>Basic water access
+									</h3>
+									<hr />
+									<p>
+										<i>The World Health Organisation</i> defines
+										<b>basic water access</b>
+										as having a <b>protected drinking water source</b> that
+										takes less than thirty minutes to collect water from. <br />
+										<br />
+										<b style="color: #e41a1c">Africa</b> by far has the lowest
+										percentage access to basic water. <br /><br />For instance,
+										<b style="color: #e41a1c">Central African Republic</b> has
+										the second lowest basic water access in the world (after
+										<b style="color: #e41a1c">Eritrea</b>) at <b>37.20%</b> and
+										the highest infant mortality rate at
+										<b>81 deaths.</b>
+									</p>
+								</div>
+								<div class="scatter-2">
+									<h3>
+										<i
+											class="fas fa-toilet-paper"
+											style="margin-right: 20px"
+										></i
+										>Basic sanitation services
+									</h3>
+									<hr />
+									<p>
+										The <i>World Health Organisation</i> defines basic
+										sanitation services as having access to a sewerage system or
+										a composing toilet. <br /><br />
+										Once again, <b style="color: #e41a1c">Africa</b> has an
+										extremely large number of countries with
+										<b>less than 50%</b> with access to basic sanitation
+										services. <br /><br />
+										<b style="color: #e41a1c">Ethiopia, Eritrea and Chad</b> all
+										have the lowest percentage access to basic sanitation, and
+										it shows! They also have an <b>extremely high</b> infant
+										mortality rate!
+									</p>
+								</div>
+								<div class="scatter-3">
+									<h3>
+										<i class="fas fa-dollar" style="margin-right: 20px"></i>
+										Gross Domestic Product
+									</h3>
+									<hr />
+									<p>
+										Creating facilities to access safe drinking water, and
+										creating infrastructure for sanitation services can be
+										<b>costly!</b>
+										<br /><br />
+										However, countries such as
+										<b style="color: #a65628">Cook Islands</b> show that a high
+										GDP is not required to have a low infant mortality rate as
+										they only have <b>6.51 deaths</b> but only have a GDP of
+										<b>384 million!</b>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<hr />
+				<h2>Is population denisty the answer?</h2>
 				<div class="col-12">
-					<h2>Change in infant mortality rate from 1985 to 2019</h2>
-					<div class="visualisation">
-						<div id="barchart" class = "map"></div>
-					</div></div>
-				</div>
+					<div
+						style="
+							padding-right: 50px;
+							padding-left: 50px;
+							margin-bottom: 60px;
+							margin-top: 60px;
+						"
+					>
+						<div class="row">
+							<div class="col-5">
+								<p
+									style="
+										margin-top: 100px;
+										text-align: justify;
+										text-justify: inter-word;
+										margin-right: 40px;
+									"
+								></p>
+								<h3>Population Density</h3>
+								<hr />
+								<p>
+									Perhaps <b>population density</b> plays a role ...
+									<br /><br />
+									We can see that <b style="color: #377eb8">Asia</b> has the
+									highest population density in the world at
+									<b>150 people/km<sup>2</sup></b
+									>. <br /><br />
+									However! <b style="color: #e41a1c">Africa</b>,
+									<b style="color: #ff7f00">Europe</b>,
+									<b style="color: #a6cee3">North America</b>
+									and <b style="color: #984ea3">South America</b> have similar
+									population densities but their infant mortality rates vary
+									vastly.
+								</p>
+							</div>
 
-				<hr />
-				<div class="col-12"></div>
-					<h2>Effects basic water access has on infant mortality rate</h2>
-					<div class="visualisation">
-						<div id="scatterplot2" class = "map"></div>
+							<div class="col-7">
+								<div class="visualisation">
+									<div id="barchart" class="map"></div>
+									<div class="help" style="margin-left: 140px">
+										<i class="fas fa-mouse-pointer"></i> <b>Click</b> continent
+										names in the legend to <b>highlight</b> the continent
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
+				<h2>Is it the air quality?</h2>
+				<div class="col-12">
+					<div
+						style="
+							padding-right: 50px;
+							padding-left: 50px;
+							margin-bottom: -190px;
+						"
+					>
+						<div class="row">
+							<div class="col-7">
+								<div class="visualisation">
+									<div id="stackedbar" class="map"></div>
+									<div class="help" style="margin-left: 40px">
+										<i class="fas fa-mouse-pointer"></i> <b>Click</b> the
+										continent names in the legend to <b>highlight</b> the
+										continent
+									</div>
+								</div>
+							</div>
+							<div class="col-5">
+								<div style="margin-top: 20%; margin-left: 3%">
+									<h3>Air Quality</h3>
+									<hr />
+									<p>
+										We can see that from <b>2013 to 2017</b>, the overalll
+										pollution has decreased.<br /><br />
+										In 2017, <b style="color: #377eb8">Asia</b> had the largest
+										air pollution at <b>83 μg/m<sup>3</sup></b
+										>. Second to this was
+										<b style="color: #e41a1c">Africa</b> with
+										<b>34 μg/m<sup>3</sup></b
+										>.
+
+										<br /><br />
+										Perhaps <b>air pollution</b> is a factor too!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					style="
+						text-align: center;
+						margin-top: 200px;
+						margin-bottom: -60px;
+						background-color: rgb(228, 228, 228);
+						padding: 20px;
+					"
+				>
+					Created by Gilbert Yin - 30598672
+				</div>
 			</div>
 		</div>
 
@@ -120,15 +338,13 @@
 				})
 				.catch(console.error);
 		</script>
-
 		<script type="text/javascript">
-			var spec2 = "vega/scatterplot2.json";
-			vegaEmbed("#scatterplot2", spec2, { actions: false })
+			var spec2 = "vega/stackedbarchart.json";
+			vegaEmbed("#stackedbar", spec2, { actions: false })
 				.then(function (result) {
 					// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 				})
 				.catch(console.error);
 		</script>
-		
 	</body>
 </html>

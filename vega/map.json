@@ -3,6 +3,7 @@
 
 	"width": "container",
 	"height": "container",
+
 	"data": {
 		"url": "data/worldmap.topojson",
 		"format": { "type": "topojson", "feature": "custom.geo (5)" }
@@ -66,7 +67,8 @@
 					"2016",
 					"2017",
 					"2018",
-					"2019"
+					"2019",
+					"Continent Name"
 				]
 			}
 		},
@@ -90,6 +92,12 @@
 				"type": "nominal",
 				"title": "Country Name"
 			},
+
+			{
+				"field": "Continent Name",
+				"type": "nominal",
+				"title": "Continent Name"
+			},
 			{
 				"field": "Year",
 				"type": "quantitative",
@@ -97,5 +105,12 @@
 				"format": ".2f"
 			}
 		]
+	},
+	"config": {
+		"axis": { "labelFont": "Helvetica", "titleFont": "Helvetica" },
+		"legend": { "labelFont": "Helvetica", "titleFont": "Helvetica" },
+		"header": { "labelFont": "Helvetica", "titleFont": "Helvetica" },
+		"mark": { "font": "Helvetica" },
+		"title": { "font": "Helvetica", "subtitleFont": "Helvetica" }
 	}
 }

@@ -15,8 +15,8 @@
 				"input": "select",
 				"options": [
 					null,
-					"North america",
-					"South america",
+					"North America",
+					"South America",
 					"Europe",
 					"Africa",
 					"Asia",
@@ -41,9 +41,10 @@
 		}
 	],
 
-	"hconcat": [
+	"vconcat": [
 		{
-			"width": 250,
+			"width": 600,
+			"height": 300,
 			"layer": [
 				{
 					"mark": "circle",
@@ -54,18 +55,18 @@
 							"type": "nominal",
 							"scale": {
 								"domain": [
-									"North america",
-									"South america",
+									"North America",
+									"South America",
 									"Europe",
 									"Africa",
 									"Asia",
 									"Oceania"
 								],
 								"range": [
-									"#e41a1c",
+									"#a6cee3",
 									"#984ea3",
 									"#ff7f00",
-									"#a6cee3",
+									"#e41a1c",
 									"#377eb8",
 									"#a65628"
 								]
@@ -75,15 +76,26 @@
 						"x": {
 							"field": "Basic water access",
 							"type": "quantitative",
-							"title": "Percentage of population that has basic water access"
+							"title": "% with basic water access",
+							"axis": {
+								"tickCount": 8,
+								"labelFontSize": 14,
+								"titleFontSize": 16,
+								"labelPadding": 10
+							}
 						},
 						"y": {
 							"field": "2019",
 							"type": "quantitative",
-							"title": "Infant mortality rate per thousand births",
+							"title": "Infant mortality rate",
 							"scale": {
 								"type": "linear",
 								"domain": [0, 85]
+							},
+							"axis": {
+								"labelFontSize": 14,
+								"titleFontSize": 16,
+								"labelPadding": 10
 							}
 						},
 
@@ -98,6 +110,12 @@
 								"type": "quantitative",
 								"title": "Infant Mortality Rate",
 								"format": ".2f"
+							},
+							{
+								"field": "Basic water access",
+								"type": "quantitative",
+								"title": "Basic Water Access",
+								"format": ".2f"
 							}
 						]
 					}
@@ -106,7 +124,8 @@
 		},
 
 		{
-			"width": 250,
+			"width": 600,
+			"height": 300,
 			"mark": "circle",
 			"encoding": {
 				"color": {
@@ -114,18 +133,18 @@
 					"type": "nominal",
 					"scale": {
 						"domain": [
-							"North america",
-							"South america",
+							"North America",
+							"South America",
 							"Europe",
 							"Africa",
 							"Asia",
 							"Oceania"
 						],
 						"range": [
-							"#e41a1c",
+							"#a6cee3",
 							"#984ea3",
 							"#ff7f00",
-							"#a6cee3",
+							"#e41a1c",
 							"#377eb8",
 							"#a65628"
 						]
@@ -134,15 +153,26 @@
 				"x": {
 					"field": "Basic sanitation",
 					"type": "quantitative",
-					"title": "Percentage of population that has basic sanitation services"
+					"title": "% access to basic sanitation services",
+					"axis": {
+						"tickCount": 8,
+						"labelFontSize": 14,
+						"titleFontSize": 16,
+						"labelPadding": 10
+					}
 				},
 				"y": {
 					"field": "2019",
 					"type": "quantitative",
-					"title": "Infant mortality rate per thousand births",
+					"title": "Infant mortality rate",
 					"scale": {
 						"type": "linear",
 						"domain": [0, 85]
+					},
+					"axis": {
+						"labelFontSize": 14,
+						"titleFontSize": 16,
+						"labelPadding": 10
 					}
 				},
 				"tooltip": [
@@ -156,13 +186,19 @@
 						"type": "quantitative",
 						"title": "Infant Mortality Rate",
 						"format": ".2f"
+					},
+					{
+						"field": "Basic sanitation",
+						"type": "quantitative",
+						"title": "% With Access to Basic Sanitation",
+						"format": ".2f"
 					}
 				]
 			}
 		},
 		{
-			"width": 250,
-
+			"width": 600,
+			"height": 300,
 			"mark": "circle",
 			"encoding": {
 				"color": {
@@ -170,18 +206,18 @@
 					"type": "nominal",
 					"scale": {
 						"domain": [
-							"North america",
-							"South america",
+							"North America",
+							"South America",
 							"Europe",
 							"Africa",
 							"Asia",
 							"Oceania"
 						],
 						"range": [
-							"#e41a1c",
+							"#a6cee3",
 							"#984ea3",
 							"#ff7f00",
-							"#a6cee3",
+							"#e41a1c",
 							"#377eb8",
 							"#a65628"
 						]
@@ -191,20 +227,30 @@
 				"x": {
 					"field": "GDP (Millions)",
 					"type": "quantitative",
-					"title": "GDP",
+					"title": "GDP ($ Millions)",
 					"scale": {
 						"type": "log",
 						"domain": [1, 10000000]
 					},
-					"axis": { "tickCount": 6 }
+					"axis": {
+						"tickCount": 6,
+						"labelFontSize": 14,
+						"titleFontSize": 16,
+						"labelPadding": 10
+					}
 				},
 				"y": {
 					"field": "2019",
 					"type": "quantitative",
-					"title": "Infant mortality rate per thousand births",
+					"title": "Infant mortality rate",
 					"scale": {
 						"type": "linear",
 						"domain": [0, 85]
+					},
+					"axis": {
+						"labelFontSize": 14,
+						"titleFontSize": 16,
+						"labelPadding": 10
 					}
 				},
 
@@ -219,9 +265,29 @@
 						"type": "quantitative",
 						"title": "Infant Mortality Rate",
 						"format": ".2f"
+					},
+					{
+						"field": "GDP (Millions)",
+						"type": "quantitative",
+						"title": "GDP ($ Millions)",
+						"format": ".2f"
 					}
 				]
 			}
 		}
-	]
+	],
+	"config": {
+		"legend": {
+			"orient": "bottom",
+			"direction": "horizontal",
+			"labelFont": "Helvetica",
+			"titleFont": "Helvetica"
+		},
+
+		"axis": { "labelFont": "Helvetica", "titleFont": "Helvetica" },
+
+		"header": { "labelFont": "Helvetica", "titleFont": "Helvetica" },
+		"mark": { "font": "Helvetica" },
+		"title": { "font": "Helvetica", "subtitleFont": "Helvetica" }
+	}
 }
