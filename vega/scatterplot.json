@@ -278,7 +278,7 @@
 	],
 	"config": {
 		"legend": {
-			"orient": "bottom",
+			"orient": "top",
 			"direction": "horizontal",
 			"labelFont": "Helvetica",
 			"titleFont": "Helvetica"
